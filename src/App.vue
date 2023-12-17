@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <router-link to="/"><a class="nav-link active" aria-current="page" href="#">Home</a></router-link>
-        <router-link to="/list"><a class="nav-link" href="#">Blog</a></router-link>
+        <router-link to="/list"><a class="nav-link" href="#">List</a></router-link>
         <a class="nav-link" href="#">guest</a>
       </div>
     </div>
@@ -18,7 +18,6 @@
 <div class="mt-4">
 <router-view :블로그글="블로그글"></router-view>
 </div>
-
 </template>
 
 <script>

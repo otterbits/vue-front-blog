@@ -2,8 +2,9 @@
   <div>
     <h4>상세페이지</h4>
     <h5>{{ 블로그글[$route.params.id].title }}</h5>
-    <p>내용</p>
+    <p>{{ 블로그글[$route.params.id].content }}</p>
   </div>
+  <router-view></router-view>
 </template>
 
 <script>
