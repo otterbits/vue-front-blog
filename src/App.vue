@@ -7,24 +7,22 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Prologue</a>
-        <a class="nav-link" href="#">blog</a>
+        <router-link to="/"><a class="nav-link active" aria-current="page" href="#">Home</a></router-link>
+        <router-link to="/list"><a class="nav-link" href="#">Blog</a></router-link>
+        <a class="nav-link" href="#">guest</a>
       </div>
     </div>
   </div>
 </nav>
-<div class="container mt-4">
-  <h5>React 개발자의 블로그입니다</h5>
-    <p>- Vue로 만들었음</p>
-</div>
-<List :블로그글="블로그글" />
+
+
+<router-view :블로그글="블로그글"></router-view>
 
 </template>
 
 <script>
 import blog from './assets/blog.js'
-import List from './components/List.vue'
+
 
 export default {
   name: 'App',
@@ -34,7 +32,6 @@ export default {
     }
   },
   components: {
-    List : List,
   }
 }
 
