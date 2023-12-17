@@ -15,8 +15,9 @@
   </div>
 </nav>
 
-
+<div class="mt-4">
 <router-view :블로그글="블로그글"></router-view>
+</div>
 
 </template>
 
